@@ -1,0 +1,327 @@
+body {
+	position: relative;
+	color: #f7f7f7;
+	font: 17px/1.5em 'Open Sans', sans-serif;
+	background-color: #272833;
+}
+
+::-webkit-selection {
+	background-color: #DBDBDB;
+}
+
+::selection {
+	background-color: #DBDBDB;
+}
+
+a {
+	color: #3C4ACD;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+a:hover, a:focus, .btn:hover, .btn:focus {
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.nude {
+	border-color: transparent;
+}
+
+#wrapper {
+	padding: 30px 15px 10px;
+	background-color: #272833;
+	/*background: url('../img/patterns/footer_lodyas.png') repeat 0 0 scroll #212121;*/
+}
+#side-wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	width: 280px;
+	background-color: #23242D;
+}
+#side-wrapper .brand>a,
+#side-wrapper .brand h4>small {
+	color: #DBDBDB;
+}
+#side-wrapper .brand h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#content-wrapper {
+	margin-left: 280px;
+}
+.content {
+	position: relative;
+	width: 90%;
+	padding: 8%;
+	margin: 0 auto 20px;
+	color: #272833;
+	background-color: #f7f7f7;
+ 	border-radius: 2px;
+}
+.content .border {
+  position: absolute;
+  height: 10px;
+  width: 70px;
+  background: #3C4ACD;
+  bottom: 0;
+  box-shadow: 70px 0 0 rgb(57, 68, 169),140px 0 0 rgb(39, 40, 51), 210px 0 0 rgb(35, 36, 45);
+}
+
+.brand {
+  padding: 30px 15px;
+}
+.brand img {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.navbar.navbar-blue .nav>li {
+  width: 100%;
+}
+.navbar.navbar-blue .nav>li>a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #DBDBDB;
+  text-align: center;
+  padding: 10px 30px;
+}
+.navbar.navbar-blue .nav>li>a:focus, .navbar.navbar-blue .nav>li>a:hover {
+  text-decoration: none;
+  color: #3C4ACD;
+  background-color: transparent;
+}
+
+.text-primary {
+  color: #3C4ACD;
+}
+.text-muted {
+  color: #474856;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 2px;
+}
+:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
+.btn-primary {
+	background-color: #3C4ACD;
+	border-color: #3C4ACD;
+}
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3944A9;
+  border-color: #3944A9;
+}
+
+.nav.nav-skills li>a {
+  font-size: 13px;
+  line-height: 1em;
+}
+.nav.nav-skills >li>a:focus, .nav.nav-skills >li>a:hover {
+  text-decoration: none;
+  background-color: #DBDBDB;
+  color: #272833;
+}
+
+.nav.nav-repositories li>a {
+  font-size: 1.2em;
+  color: #23242D;
+}
+.nav.nav-repositories >li>a:focus, .nav.nav-repositories >li>a:hover {
+  text-decoration: none;
+  background-color: #DBDBDB;
+  color: #474856;
+}
+
+.social-links {
+	text-align: center;
+	margin: 20px 0 40px;
+}
+.social-links li>a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #DBDBDB;
+	font-size: 1.3em;
+	border-radius: 50%;
+}
+.social-links li>a:hover,
+.social-links li>a:focus {
+	color: #3C4ACD;
+}
+
+.services h4, .contact h4 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  color: #474856;
+  background-color: #DBDBDB;
+  padding: 16px 5px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.project {
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 2px;
+}
+.caption {
+  position: absolute;
+  padding: 20px 15px;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  z-index: 1;
+  color: #fff;
+  font: 15px/1.4em 'Open sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(39, 40, 51, .9);
+  -webkit-transition: bottom .4s ease-in-out;
+  transition: bottom .4s ease-in-out;
+}
+.caption span {
+  font-size: 1.3em;
+  margin-left: 15px;
+}
+.project:hover .caption {
+	bottom: 0;
+  -webkit-transition: bottom .4s ease-in-out;
+  transition: bottom .4s ease-in-out;
+}
+
+/*========================= Contact form ==================== */
+.form-group {
+  position: relative;
+}
+.form-group label {
+  position: absolute;
+  top: 13px;
+  left: 25px;
+  right: 25px;
+  font-weight: 400;
+  color: #7e7e7e;
+  margin-bottom: 0;
+}
+label.floating {
+  top: 0;
+  font-size: 12px;
+  padding: 2px 0 0;
+  opacity: .6;
+  -webkit-transition: all .06s ease-in-out;
+  transition: all .06s ease-in-out;
+}
+.has-error label:before {
+  content: "Valid email address is required.";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 12px;
+  margin-top: -6px;
+  line-height: 1em;
+  overflow: hidden;
+  font-size: 12px;
+  color: #FF0000;
+}
+.has-success label:before {
+  content: "Good Job.";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 12px;
+  margin-top: -6px;
+  line-height: 1em;
+  overflow: hidden;
+  font-size: 12px;
+  color: #8ACD69;
+}
+.form-control {
+  height: 53px;
+  font: 15px/1.4em 'Open sans', sans-serif;
+  border-radius: 2px;
+  padding: 20px 25px 10px;
+  box-shadow: none;
+}
+textarea.form-control {
+  height: auto;
+  border-radius: 2px;
+  padding: 20px 25px 10px;
+  box-shadow: none;
+  max-width: 100%;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-error .form-control {
+  border-color: #FF5771;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-error .form-control:focus {
+  border-color: #FF5771;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-success .form-control {
+  border-color: #8ACD69;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-success .form-control:focus {
+  border-color: #8ACD69;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#SkypeButton_Call_angelxmoreno_1 img {
+  margin: 0;
+  vertical-align: top;
+  position: absolute;
+  top: 58px;
+  left: -8px;
+}
+
+@media screen and (max-width: 767px) {
+	#side-wrapper {
+		position: relative;
+		width: 100%;
+		border-radius: 2px;	
+	}
+	#content-wrapper {
+		margin-left: 0;
+	}
+	.content {
+		width: 100%;
+	}
+	.brand {
+		margin-bottom: 0;
+	}
+	.text-right {
+		text-align: left;
+	}
+}
+@media screen and (min-width: 768px) {
+	.content h2 {
+		font-size: 48px;
+	}
+}
