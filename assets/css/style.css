@@ -296,9 +296,6 @@ textarea.form-control {
 #SkypeButton_Call_angelxmoreno_1 img {
   margin: 0;
   vertical-align: top;
-  position: absolute;
-  top: 58px;
-  left: -8px;
 }
 
 @media screen and (max-width: 767px) {
